@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { fetchDatas } from '../Redux/API_5Days/FDTH_Api_Action'
 import { fetchData } from '../Redux/API_CUR/Current_ApiActions'
-import About from './About'
 import TEMP from '../images/temp.png'
 import COLD from '../images/cold.png'
 import HUMIDITY from '../images/humidity.png'
@@ -19,27 +18,17 @@ function Main_Api_Container() {
 
     const s = useSelector((state) => state)
 
-    
-    //console.log(s.length())
-    //  console.log(state.map((obj)=>{
-    //     return obj
-    //  }))
-
+   
     const dispatch = useDispatch()
     const dispatch1 = useDispatch()
 
     const [city, setCity] = useState('pune')
-    // const [weatherObj, setWeatherObj] = useState({})
-    //let datas=[]
-    // datas=state.data.clouds
-    //console.log(datas)
-    // const { loading, error, data } = state
-    //  console.log(state.data.weather[0])
+     
 
     let onchangecity = (e) => {
         console.log(e.target.value)
         setCity(e.target.value)
-        // console.log(city)
+      
 
         dispatch(fetchDatas(city))
         dispatch1(fetchData(city))
@@ -149,10 +138,7 @@ function Main_Api_Container() {
 
                             </div>
 
-                            <div className="col-md-4  ">
-
-                                <About />
-                            </div>
+                            
                         </div>
 
                     </div>
