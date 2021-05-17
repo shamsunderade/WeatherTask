@@ -39,43 +39,7 @@ export default class Login extends Component {
             return <Redirect to="/homepage" />
         }
         return (
-            // <>
-            //     <div className="card shadow col-lg-6 card-align mt-5" >
-            //         <div className="card-header">
-            //             <h1>Login page</h1>
-            //         </div>
-            //         <div className="card-body">
-            //             <form onSubmit={this.submitform} className="form_login">
-            //                 <div class="mb-3">
-            //                     <label for="exampleInputEmail1" class="form-label">Username</label>
-            //                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-
-            //                 </div>
-
-            //                 <div class="mb-3">
-            //                     <label for="exampleInputEmail1" class="form-label">Password</label>
-            //                     <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-
-            //                 </div>
-            //                 <div>
-            //                     <input type="submit" class="btn btn-primary btn-block" />
-            //                 </div>
-
-
-            //                 <label>Username:</label><br />
-            //                 <input type="text" autoFocus value={this.state.username} name="username" placeholder="username" onChange={this.onchangehandler} /><br />
-            //                 <label>password:</label><br />
-            //                 <input type="password" value={this.state.password} name="password" placeholder="password" onChange={this.onchangehandler} /><br />
-            //                 <br />
-            //                 <input type="submit" class="btn btn-primary btn-block" />
-
-            //             </form>
-            //         </div>
-            //     </div>
-            //      <div>
-            //     <img src={LOGIN}/>
-            // </div> 
-            // </>
+            
             <div className="container b_g_img" >
                 <div className="row w-100 d-flex justify-content-center align-items-center main-div "  >
                     <div className="col-12 col-lg-5 col-md col-xxl-5">
