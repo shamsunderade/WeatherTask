@@ -27,5 +27,5 @@ dispatch(fetchFailure(error.messsage))
 })
 }
 }
-// http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3fbb2b31fd3e77c536be64abc677a4d1
+
 
