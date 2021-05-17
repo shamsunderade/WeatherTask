@@ -6,7 +6,7 @@ const initialState={
     loading:false,
     error:'error while fetching data'
 }
-// ApiReducer
+
 const Five_Day_Api_Reducer=(state=initialState,action)=>{
     switch(action.type){
         case FETCH_API_REQUEST:return {
